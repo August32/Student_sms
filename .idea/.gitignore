@@ -3,3 +3,10 @@
 /workspace.xml
 # 基于编辑器的 HTTP 客户端请求
 /httpRequests/
+
+smoke_test_class_info.py
+smoke_test_score.py
+smoke_test_statistics.py
+smoke_test_teacher.py
+test.py
+test_employment_api.py

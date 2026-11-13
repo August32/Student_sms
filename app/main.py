@@ -67,8 +67,8 @@ async def global_exception_handler(request: Request, exc: Exception):
 #  启动日志：打印已注册接口
 _paths = app.openapi().get("paths", {})
 result = []
-for p, ops in _paths.items():     # p = 路径, ops = 该路径下的方法字典
-    for m in ops:                 # m = 方法名（小写）
+for p, ops in _paths.items():
+    for m in ops:
         result.append(f"{m.upper()} {p}")
 logger.info("服务启动完成 | 已注册接口: %s", result)
 

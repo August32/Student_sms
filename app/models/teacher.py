@@ -17,7 +17,7 @@ teacher_class = Table(
 # 复合主键(唯一且非空),把老师和班级绑在一起,不出现重复记录
 
 class Teacher(Base):
-    """老师信息表（对应需求 2.5 老师管理模块）"""
+    """老师信息表"""
     __tablename__ = 'teachers'
 
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)  # 老师编号:列名,整数,唯一且不为空的主键,建个索引,自增
